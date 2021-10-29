@@ -1,23 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import {Calculator} from './views/Calculator';
-import { Header } from 'react-native-elements';
-import { SafeAreaView, StyleSheet, Text, View, ScrollView, Image} from 'react-native';
+import { StatusBar } from 'expo-status-bar'
+import React from 'react'
+import { Calculator } from './src/Screens/Calculator'
+
+import { SafeAreaView, StyleSheet } from 'react-native'
 
 export default function App() {
   return (
-    <SafeAreaView style = {styles.container}>
-      <StatusBar
-      hidden = {false}
-      backgroundColor = "#0066CC"
-      translucent = {false}
-      networkActivityIndicatorVisible={true} />
-      
-      <Calculator/>
-    
+    <SafeAreaView style={styles.container}>
+      <StatusBar hidden={false} backgroundColor="#0066CC" translucent={false} />
+      <Calculator />
     </SafeAreaView>
-
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -32,9 +25,9 @@ const styles = StyleSheet.create({
 
   legend: {
     fontSize: 12,
-    color: '#262626'
+    color: '#262626',
   },
-  container: { 
+  container: {
     backgroundColor: '#17181A',
     display: 'flex',
     flex: 1,
@@ -47,27 +40,27 @@ const styles = StyleSheet.create({
 
   desc: {
     fontSize: 14,
-    textAlign: 'justify'
+    textAlign: 'justify',
   },
   paragraph: {
-    textAlign: 'justify'
+    textAlign: 'justify',
   },
   paragraphTitle: {
     fontSize: 20,
-    fontWeight: "bold",
+    fontWeight: 'bold',
   },
 
   headerText: {
     color: 'white',
     fontSize: 14,
-    fontWeight:"bold"
+    fontWeight: 'bold',
   },
   image: {
     width: '100%',
-    height: 220
+    height: 220,
   },
   paragraphLast: {
     paddingBottom: 100,
-    textAlign: 'justify'
-  }
-});
+    textAlign: 'justify',
+  },
+})
